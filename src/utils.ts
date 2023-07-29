@@ -1,3 +1,5 @@
+import { mainUser } from './constants';
+
 const addNode = (obj, data, parentId) => {
   if (obj.id === parentId) {
     obj.replies.push(data);
@@ -31,8 +33,8 @@ const deleteNode = (obj, replyId) => {
   });
 
   const indexOfObjToBeRemoved = obj.replies.findIndex(
-    ({ id, isDeleted, replies }) =>
-      isDeleted && id === replyId && replies.length < 1
+    ({ isDeleted, replies, userData: { id: userId } }) =>
+      isDeleted && userId === mainUser.id && replies.length < 1
   );
   if (indexOfObjToBeRemoved !== -1)
     obj.replies.splice(indexOfObjToBeRemoved, 1);
