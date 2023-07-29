@@ -63,7 +63,7 @@ const ReplyForm = ({ isAddingAndParentId, closeForm, isEditingAndData }) => {
 
       <div className='flex flex-wrap gap-2'>
         <button
-          className='middle none center rounded-lg bg-blue-500 py-1 px-2 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none h-7 self-end'
+          className='middle none center rounded-lg bg-blue-500 py-1 px-2 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none h-7 self-end'
           data-ripple-light='true'
           type='submit'
         >
@@ -72,7 +72,7 @@ const ReplyForm = ({ isAddingAndParentId, closeForm, isEditingAndData }) => {
 
         {closeForm && (
           <button
-            className='middle none center rounded-lg bg-red-500 py-1 px-2 font-sans text-xs font-bold uppercase text-white shadow-md shadow-red-500/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none h-7 self-end'
+            className='middle none center rounded-lg bg-red-500 py-1 px-2 font-sans text-xs font-bold uppercase text-white shadow-md shadow-red-500/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none h-7 self-end'
             data-ripple-light='true'
             onClick={closeForm}
           >
