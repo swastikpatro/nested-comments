@@ -8,7 +8,7 @@ const ReplyForm = ({ isAddingAndParentId, closeForm, isEditingAndData }) => {
   );
   const { addReply, editReply } = useReplyContext();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     const trimmedInput = inputText.trim();
 
