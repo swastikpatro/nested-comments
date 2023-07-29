@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "rootDir": "./src",
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
+    "incremental": true,
+    "target": "ES5",
+    "module": "ES2020",
+    "lib": ["DOM", "ES2020.Promise"],
+    "allowJs": false,
+    "checkJs": false,
+    "jsx": "react",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": false,
+    "tsBuildInfoFile": "./tsbuildinfo/tsconfig.tsbuildinfo",
+    "removeComments": false, // Required for webpack magic comments
+    "noEmit": false,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "isolatedModules": true,
+    "strict": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowUnreachableCode": false
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["./src/test/e2e/user-flows/**/*"] // Exclude Cypress end to end tests
+}
