@@ -30,10 +30,12 @@ const deleteNode = (obj, replyId) => {
     deleteNode(childObj, replyId);
   });
 
-  obj.replies = obj.replies.filter(
+  const indexOfObjToBeRemoved = obj.replies.findIndex(
     ({ id, isDeleted, replies }) =>
-      !isDeleted || (replies.length > 0 && id === replyId)
+      isDeleted && id === replyId && replies.length < 1
   );
+  if (indexOfObjToBeRemoved !== -1)
+    obj.replies.splice(indexOfObjToBeRemoved, 1);
 };
 
 export const addCommentsInLocalStorage = (allCommentsClone) =>
