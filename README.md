@@ -3,7 +3,7 @@
 - CRUD within nested replies (client-side).
 - local storage for data persistence.
 - No two replies can be edited at the same time.
-- Deleting a reply (parent reply) containing many replies (children replies) to it, will delete the only delete the parent reply and not the children replies.
+- Deleting a reply (parent reply) containing many replies (children replies) to it, will only delete the parent reply and not the children replies.
 - Deleting a reply containing no children reply will be removed from the UI.
 - Clean UI using tailwind css.
 
